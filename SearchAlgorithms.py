@@ -28,11 +28,3 @@ def binary_search(my_array, my_element, left, right):
         return binary_search(my_array, my_element, left, middle - 1)
     else:  # иначе в правой
         return binary_search(my_array, my_element, middle + 1, right)
-
-
-if __name__ == '__main__':
-    element = int(input('Введите число для поиска в массиве: '))
-    array = [i for i in range(1, 100)]
-
-    # запускаем алгоритм на левой и правой границе
-    print(binary_search(array, element, 0, 99))
